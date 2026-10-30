@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap');
-
 .app-shell {
 	position: relative;
 	overflow: hidden;
@@ -44,10 +42,14 @@
 }
 
 .hero,
+.upcoming-test,
+.moon-goal,
 .capabilities,
 .showcase,
 .mission-panel,
-.contact-section {
+.team-section,
+.contact-section,
+.about-section {
 	position: relative;
 	z-index: 1;
 }
@@ -80,11 +82,11 @@
 
 .brand-name {
 	color: #f5f7fb;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.2rem;
-	letter-spacing: 0.08em;
+	letter-spacing: 0.02em;
 	font-weight: 700;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 .nav {
@@ -100,7 +102,7 @@
 .card-index,
 .timeline span,
 .moon-caption span {
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 }
@@ -133,7 +135,7 @@
 		inset 0 1px 0 rgba(255, 255, 255, 0.7);
 	color: #000000;
 	text-decoration: none;
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 0.8rem;
 	font-weight: 700;
 	letter-spacing: 0.1em;
@@ -170,7 +172,7 @@
 }
 
 .launch-chip strong {
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 0.88rem;
 	font-weight: 600;
 }
@@ -201,7 +203,7 @@
 .showcase-copy h2,
 .mission-panel h2 {
 	margin: 0;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	letter-spacing: -0.05em;
 	line-height: 0.94;
@@ -297,7 +299,7 @@
 	display: block;
 	margin-bottom: 0.55rem;
 	color: #f7f8fb;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.55rem;
 }
 
@@ -371,7 +373,7 @@
 }
 
 .moon-caption strong {
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1rem;
 	font-weight: 600;
 }
@@ -397,7 +399,7 @@
 .section-heading p {
 	margin: 0;
 	color: rgba(245, 247, 251, 0.62);
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 0.72rem;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
@@ -439,7 +441,7 @@
 
 .capability-card h3 {
 	margin: 0 0 0.75rem;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.35rem;
 	color: #f7f8fb;
 }
@@ -499,7 +501,7 @@
 }
 
 .timeline strong {
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.12rem;
 	color: #f7f8fb;
 }
@@ -538,7 +540,7 @@
 
 .site-footer h2 {
 	margin: 0;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: clamp(1.8rem, 4vw, 2.6rem);
 	letter-spacing: -0.05em;
 	color: #f7f8fb;
@@ -565,7 +567,7 @@
 
 .contact-copy h2 {
 	margin: 0;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: clamp(1.9rem, 4vw, 2.9rem);
 	letter-spacing: -0.05em;
 	line-height: 1;
@@ -583,12 +585,16 @@
 	display: inline-flex;
 	color: #f7f8fb;
 	text-decoration: none;
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 0.85rem;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	border-bottom: 1px solid rgba(247, 248, 251, 0.4);
 	padding-bottom: 0.2rem;
+}
+
+.contact-link--email {
+	text-transform: lowercase;
 }
 
 .contact-details {
@@ -610,6 +616,10 @@
 		background 220ms ease;
 }
 
+.contact-details .contact-details-wide {
+	grid-column: 1 / -1;
+}
+
 .contact-details div:hover {
 	transform: translateY(-3px);
 	border-color: rgba(255, 255, 255, 0.24);
@@ -617,7 +627,7 @@
 }
 
 .contact-details span {
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 0.7rem;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
@@ -631,14 +641,420 @@
 	line-height: 1.5;
 }
 
+.upcoming-test {
+	display: grid;
+	grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+	gap: 2rem;
+	align-items: center;
+	margin: -1.5rem 3rem 4.5rem;
+	padding: 2.4rem;
+	border-radius: 1.45rem;
+	border: 1px solid rgba(255, 138, 61, 0.55);
+	background:
+		radial-gradient(circle at 0% 0%, rgba(255, 122, 40, 0.28), transparent 55%),
+		radial-gradient(circle at 100% 100%, rgba(255, 186, 92, 0.14), transparent 50%),
+		linear-gradient(145deg, rgba(28, 16, 10, 0.92), rgba(8, 7, 7, 0.88));
+	box-shadow:
+		0 0 0 1px rgba(255, 138, 61, 0.12),
+		0 0 60px rgba(255, 110, 30, 0.22),
+		0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.upcoming-test-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin: 0 0 1.1rem;
+	padding: 0.45rem 0.85rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 160, 90, 0.6);
+	background: rgba(255, 122, 40, 0.14);
+	color: #ffb27a;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.upcoming-test-pulse {
+	width: 0.55rem;
+	height: 0.55rem;
+	border-radius: 50%;
+	background: #ff7a28;
+	box-shadow: 0 0 0 0 rgba(255, 122, 40, 0.7);
+	animation: upcoming-pulse 1.8s ease-out infinite;
+}
+
+@keyframes upcoming-pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 122, 40, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 0.7rem rgba(255, 122, 40, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 122, 40, 0);
+	}
+}
+
+.upcoming-test-copy h2 {
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: clamp(2.6rem, 7vw, 5rem);
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	line-height: 0.95;
+	background: linear-gradient(100deg, #ffffff 30%, #ffb27a 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.upcoming-test-text {
+	margin: 1.1rem 0 0;
+	max-width: 32rem;
+	color: rgba(240, 232, 226, 0.86);
+	line-height: 1.7;
+}
+
+.upcoming-test-specs {
+	display: grid;
+	gap: 0.85rem;
+	margin: 0;
+}
+
+.upcoming-test-specs div {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 1rem;
+	padding: 1rem 1.2rem;
+	border-radius: 0.9rem;
+	border: 1px solid rgba(255, 160, 90, 0.24);
+	background: rgba(0, 0, 0, 0.32);
+}
+
+.upcoming-test-specs dt {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.72rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(255, 210, 178, 0.72);
+}
+
+.upcoming-test-specs dd {
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+	font-weight: 700;
+	color: #ffffff;
+	text-align: right;
+}
+
+.moon-goal {
+	margin: 0 3rem 3rem;
+	padding: 2.2rem 2rem;
+	border-radius: 1.45rem;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	background:
+		radial-gradient(circle at 85% 0%, rgba(220, 226, 240, 0.16), transparent 50%),
+		linear-gradient(160deg, rgba(18, 19, 24, 0.85), rgba(6, 6, 8, 0.7));
+	backdrop-filter: blur(18px);
+	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.moon-goal-heading {
+	max-width: 44rem;
+	margin-bottom: 1.8rem;
+}
+
+.moon-goal-heading h2 {
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: clamp(2.2rem, 5.5vw, 4rem);
+	letter-spacing: -0.05em;
+	line-height: 0.95;
+	color: #f7f8fb;
+}
+
+.moon-goal-heading p:not(.eyebrow) {
+	margin: 1rem 0 0;
+	color: rgba(232, 236, 244, 0.8);
+	line-height: 1.7;
+}
+
+.moon-goal-roadmap {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.moon-goal-roadmap li {
+	padding: 1.3rem;
+	border-radius: 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.moon-goal-roadmap li:last-child {
+	border-color: rgba(235, 240, 255, 0.45);
+	background: rgba(235, 240, 255, 0.07);
+	box-shadow: 0 0 40px rgba(220, 228, 255, 0.12);
+}
+
+.moon-goal-roadmap h3 {
+	margin: 0 0 0.75rem;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.25rem;
+	color: #f7f8fb;
+}
+
+.moon-goal-roadmap p {
+	margin: 0;
+	color: rgba(232, 236, 244, 0.72);
+	font-size: 0.92rem;
+	line-height: 1.6;
+}
+
+.about-section {
+	display: grid;
+	grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+	gap: 2rem;
+	align-items: start;
+	margin: 0 3rem 3rem;
+	padding: 1.8rem;
+	border-radius: 1.45rem;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	background: linear-gradient(145deg, rgba(16, 16, 18, 0.72), rgba(7, 7, 8, 0.4));
+	backdrop-filter: blur(18px);
+}
+
+.about-heading h2 {
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: clamp(1.9rem, 4vw, 2.9rem);
+	letter-spacing: -0.05em;
+	line-height: 1;
+	color: #f7f8fb;
+}
+
+.about-copy p {
+	margin: 0 0 1rem;
+	color: rgba(232, 236, 244, 0.82);
+	line-height: 1.7;
+}
+
+.about-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	margin: 1.4rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.about-tags li {
+	padding: 0.45rem 0.8rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.04);
+	color: rgba(245, 247, 251, 0.86);
+	font-size: 0.72rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.team-section {
+	margin: 0 3rem 3rem;
+	padding: 2.2rem;
+	border-radius: 1.45rem;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	background: linear-gradient(145deg, rgba(16, 16, 18, 0.72), rgba(7, 7, 8, 0.4));
+	backdrop-filter: blur(18px);
+}
+
+.team-heading {
+	margin-bottom: 2rem;
+	display: grid;
+	gap: 0.5rem;
+}
+
+.team-heading h2 {
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: clamp(2rem, 4.5vw, 3.2rem);
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	line-height: 1.05;
+	color: #f7f8fb;
+}
+
+.team-subtitle {
+	margin: 0;
+	max-width: 44rem;
+	color: rgba(232, 236, 244, 0.76);
+	font-size: 0.98rem;
+	line-height: 1.6;
+}
+
+.team-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+.team-card {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 1.2rem;
+	background: rgba(7, 7, 8, 0.6);
+	backdrop-filter: blur(16px);
+	overflow: hidden;
+	transition:
+		transform 260ms cubic-bezier(0.16, 1, 0.3, 1),
+		border-color 260ms ease,
+		box-shadow 260ms ease,
+		background 260ms ease;
+}
+
+.team-card:hover {
+	transform: translateY(-5px);
+	border-color: rgba(255, 255, 255, 0.28);
+	background: rgba(18, 18, 22, 0.75);
+	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+.team-image-wrapper {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	background: rgba(14, 14, 16, 0.8);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.team-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 15%;
+	display: block;
+	transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.team-card:hover .team-image {
+	transform: scale(1.04);
+}
+
+.team-image-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, transparent 60%, rgba(7, 7, 8, 0.75) 100%);
+	pointer-events: none;
+}
+
+.team-info {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 1.4rem;
+	gap: 1.15rem;
+}
+
+.team-header {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+}
+
+.team-header h3 {
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	color: #f7f8fb;
+}
+
+.team-role {
+	display: inline-block;
+	color: #f0954b;
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.team-detail {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+}
+
+.team-detail-label {
+	font-size: 0.68rem;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: rgba(245, 247, 251, 0.45);
+}
+
+.team-education {
+	margin: 0;
+	font-size: 0.86rem;
+	line-height: 1.5;
+	color: rgba(232, 236, 244, 0.84);
+}
+
+.team-expertise-tags {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.team-tag {
+	padding: 0.32rem 0.62rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	background: rgba(255, 255, 255, 0.04);
+	color: rgba(245, 247, 251, 0.86);
+	font-size: 0.72rem;
+	letter-spacing: 0.03em;
+	line-height: 1.2;
+	transition: background 180ms ease, border-color 180ms ease;
+}
+
+.team-card:hover .team-tag {
+	border-color: rgba(255, 255, 255, 0.28);
+	background: rgba(255, 255, 255, 0.08);
+}
+
 @media (max-width: 1100px) {
 	.topbar,
 	.hero,
 	.showcase,
 	.mission-panel,
 	.site-footer,
-	.contact-section {
+	.upcoming-test,
+	.team-section,
+	.contact-section,
+	.about-section {
 		grid-template-columns: 1fr;
+	}
+
+	.team-grid {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	}
 
 	.topbar {
@@ -680,6 +1096,10 @@
 		grid-template-columns: 1fr;
 	}
 
+	.moon-goal-roadmap {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 	.contact-details {
 		grid-template-columns: 1fr;
 	}
@@ -688,10 +1108,14 @@
 @media (max-width: 720px) {
 	.topbar,
 	.hero,
+	.upcoming-test,
+	.moon-goal,
 	.capabilities,
 	.showcase,
 	.mission-panel,
-	.contact-section {
+	.team-section,
+	.contact-section,
+	.about-section {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
@@ -700,13 +1124,29 @@
 		display: none;
 	}
 
+	.upcoming-test,
+	.moon-goal,
 	.capabilities,
 	.showcase,
 	.mission-panel,
 	.site-footer,
-	.contact-section {
+	.team-section,
+	.contact-section,
+	.about-section {
 		margin-left: 1rem;
 		margin-right: 1rem;
+	}
+
+	.team-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.team-section {
+		padding: 1.5rem 1rem;
+	}
+
+	.moon-goal-roadmap {
+		grid-template-columns: 1fr;
 	}
 
 	.brand {
@@ -749,12 +1189,18 @@
 	}
 
 	.capability-card,
+	.team-card,
 	.timeline div,
 	.contact-details div {
 		transition: none;
 	}
 
+	.upcoming-test-pulse {
+		animation: none;
+	}
+
 	.capability-card:hover,
+	.team-card:hover,
 	.timeline div:hover,
 	.contact-details div:hover {
 		transform: none;

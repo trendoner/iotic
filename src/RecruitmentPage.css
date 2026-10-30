@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
-
 .recruitment-page {
     position: relative;
     min-height: 100vh;
@@ -51,11 +49,11 @@
 
 .recruitment-brand span {
     color: #f5f7fb;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1.18rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .recruitment-header {
@@ -84,7 +82,7 @@
     justify-self: end;
     color: rgba(245, 247, 251, 0.84);
     text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.74rem;
     font-weight: 500;
     letter-spacing: 0.08em;
@@ -98,7 +96,7 @@
 
 .recruitment-kicker {
     margin: 0;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.72rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -108,7 +106,7 @@
 .recruitment-header h1 {
     margin: 0.7rem 0 0;
     max-width: 14ch;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: clamp(2.8rem, 6.2vw, 5rem);
     font-weight: 700;
     line-height: 0.94;
@@ -133,7 +131,7 @@
     padding: 0.9rem 1.2rem;
     border-radius: 0.6rem;
     text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -165,7 +163,7 @@
 
 .role-card h2 {
     margin: 0;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: clamp(1.5rem, 2.1vw, 2rem);
     font-weight: 800;
     letter-spacing: -0.03em;
@@ -175,7 +173,7 @@
 .role-stream {
     margin: 0.45rem 0 0;
     color: rgba(245, 247, 251, 0.62);
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.75rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -199,7 +197,7 @@
 .role-card h3 {
     margin: 0 0 0.45rem;
     color: rgba(245, 247, 251, 0.72);
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.76rem;
     font-weight: 700;
     letter-spacing: 0.08em;
