@@ -96,7 +96,7 @@ function RecruitmentPage() {
             <header className="recruitment-topbar">
                 <Link className="recruitment-brand" to="/" aria-label="IOTIC Space home">
                     <img src="/LogoWithoutText.png" alt="IOTIC Space logo" />
-                    <span>IOTIC Space</span>
+                    <span>iotic.space</span>
                 </Link>
 
                 <Link className="back-link" to="/">
