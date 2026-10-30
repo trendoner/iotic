@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
-import yashPhoto from './assets/team/yash-budvansh.jpg'
-import hrudayPhoto from './assets/team/hruday-chilukuri.jpg'
-import harikeshPhoto from './assets/team/harikesh-pratap-verma.jpg'
+import yashPhoto from '/team/yash-budvansh.jpg'
+import hrudayPhoto from '/team/hruday-chilukuri.jpg'
+import harikeshPhoto from '/team/harikesh-pratap-verma.jpg'
 
 const navItems = [
   { label: 'Home', href: '#home' },
